@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resort</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="w">Welcome to DreamLand Resort</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#reservation">Reservation</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Luxury and Comfort</h2>
+            <p>At our resort, we offer best facilities and good service to ensure a memorable stay.</p>
+            <img src="hotel.jpg" alt="Resort">
+        </section>
+
+        <section id="rooms">
+            <h1 class="s">Rooms</h1>
+            <div class="room">
+                <h2 class="r">Deluxe Room</h2>
+                <h4>Spacious room with a king-sized bed, en-suite bathroom.</p>
+                <img src="deluxe-room.jpg" alt="Deluxe Room">
+
+            </div>
+            <div>
+                <h2>Suite Room</h2>
+                <h4>Luxury suite with a separate living area, king-sized bed, and city view.</p>
+                <img src="suite.jpeg" alt="Suite">
+            </div>
+        </section>
+
+        <section id="reservation">
+            <h2>Make a Reservation</h2>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="checkin">Check-in Date:</label>
+                <input type="date" id="checkin" name="checkin" required>
+                
+                <label for="checkout">Check-out Date:</label>
+                <input type="date" id="checkout" name="checkout" required>
+                
+                <label for="room-type">Room Type:</label>
+                <select id="room-type" name="room-type" required>
+                    <option value="deluxe">Deluxe Room</option>
+                    <option value="suite">Suite</option>
+                </select>
+                
+                <button type="submit">Reserve Now</button>
+            </form>
+        </section>
+
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required="" fdprocessedid="hycekw">
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required="" fdprocessedid="unayqb">
+        
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required=""></textarea>
+        
+                <button type="submit" fdprocessedid="5jg4e">Send Message</button>
+              </form>
+                <!-- <p>"The best hotel experience I've ever had. Highly recommended!"</p>
+                <footer>-Phone</footer>
+                <p>"Exceptional service and beautiful rooms. Will visit again."</p>
+                <footer>-Instagram</footer>
+                <p>.</p>
+                <footer>-Mail</footer> -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Hotel Paradise. All rights reserved.</p>
+    </footer>
+</body>
+</html>
